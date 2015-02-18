@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="qWu-AH-IK0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="7lq-aH-alj">
+            <objects>
+                <viewController id="qWu-AH-IK0" customClass="ANPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BA8-O5-9Y5"/>
+                        <viewControllerLayoutGuide type="bottom" id="mi0-Qh-Qxk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sNA-AN-33T">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIx-F6-0iq" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-dF-I7K" userLabel="Controls Panel">
+                                <rect key="frame" x="0.0" y="949" width="768" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="FOr-hu-BEi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mi0-Qh-Qxk" firstAttribute="top" secondItem="xIx-F6-0iq" secondAttribute="bottom" id="46X-dW-p2L"/>
+                            <constraint firstItem="eXV-dF-I7K" firstAttribute="width" secondItem="sNA-AN-33T" secondAttribute="width" id="Fe4-Me-2tm"/>
+                            <constraint firstItem="xIx-F6-0iq" firstAttribute="top" secondItem="sNA-AN-33T" secondAttribute="top" id="Gdd-e2-41W"/>
+                            <constraint firstItem="xIx-F6-0iq" firstAttribute="leading" secondItem="sNA-AN-33T" secondAttribute="leading" id="WEC-ch-buG"/>
+                            <constraint firstItem="xIx-F6-0iq" firstAttribute="width" secondItem="sNA-AN-33T" secondAttribute="width" id="Zep-tT-xxR"/>
+                            <constraint firstItem="eXV-dF-I7K" firstAttribute="bottom" secondItem="mi0-Qh-Qxk" secondAttribute="top" id="oHO-FL-WwN"/>
+                            <constraint firstItem="eXV-dF-I7K" firstAttribute="leading" secondItem="sNA-AN-33T" secondAttribute="leading" id="w3y-3s-HcQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="containerView" destination="xIx-F6-0iq" id="Bcb-m8-dsa"/>
+                        <outlet property="controlPanelBottomSpaceConstraint" destination="oHO-FL-WwN" id="sbv-QC-iBL"/>
+                        <outlet property="controlPanelContainer" destination="eXV-dF-I7K" id="4Mz-Lv-rTu"/>
+                        <outlet property="controlPanelContainerHeigthConstraint" destination="FOr-hu-BEi" id="ZI6-kn-lnF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBD-Aw-seo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="311"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
